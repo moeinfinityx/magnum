@@ -147,7 +147,8 @@ class CachingObject: public Object3D, SceneGraph::AbstractFeature3D {
 namespace {
 
 /* Clang 23 adds -Wunused-template to -Wall and then warns about the unused
-   constructor. Well, this is a doc snippet, so what am I supposed to do? */
+   (template) constructor. Well, this is a doc snippet, so what am I supposed
+   to do? */
 #ifdef CORRADE_TARGET_CLANG
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-template"
